@@ -20,7 +20,7 @@
             <div class="but">
                 <button onclick="location.href='Hospitals.html'">Hospitals</button>
                 <button  onclick="location.href='Doctor.html'">Doctor</button>
-                <button onclick="location.href='Patient.html'">Patient</button>
+                <button onclick="location.href='User.html'">User</button>
                 
             </div>
             </div>
@@ -52,6 +52,64 @@
       </form>
     </section>
   </div>
+  <div id="patient-admin-panel" class="admin-panel">
+  <h2>👤 Patient Admin Panel</h2>
+
+  <!-- Register New Patient -->
+  <section class="form-section">
+    <h3>Register Patient</h3>
+    <form id="registerPatientForm">
+      <input type="text" placeholder="Full Name" required />
+      
+      <select required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Date of Birth:</label>
+      <input type="date" required />
+
+      <input type="text" placeholder="Aadhar / Passport Number" required />
+
+      <button type="submit">Register Patient</button>
+    </form>
+  </section>
+
+  <!-- Book Appointment -->
+  <section class="form-section">
+    <h3>Book Appointment</h3>
+    <form id="bookAppointmentForm">
+      <input type="text" placeholder="Patient Name" required />
+
+      <select required>
+        <option value="">Select Hospital</option>
+        <!-- Dynamic Hospital Options -->
+      </select>
+
+      <select required>
+        <option value="">Select Department</option>
+        <!-- Filtered by Hospital -->
+      </select>
+
+      <select required>
+        <option value="">Select Doctor</option>
+        <!-- Filtered by Department -->
+      </select>
+
+      <input type="date" required />
+
+      <select required>
+        <option value="">Select Time Slot</option>
+        <!-- Based on doctor + date -->
+      </select>
+
+      <button type="submit">Confirm Appointment</button>
+    </form>
+  </section>
+</div>
+
     </div>
 
 

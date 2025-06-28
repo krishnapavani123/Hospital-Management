@@ -57,7 +57,7 @@ button:hover {
 .but{
     margin-top: 5rem;
 }
-@media only screen and (max-width: 468px) {
+@media  screen and (max-width: 468px) {
 
 
 .top{
@@ -80,4 +80,41 @@ button:hover {
 
 .img{
     width:300px;
+}
+.admin-panel {
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.form-section {
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0c5fbf;
 }
