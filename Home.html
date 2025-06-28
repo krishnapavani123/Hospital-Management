@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="index.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    </head>
+    <body>
+    <div>
+
+     <div class="bg-conatiner">
+<div class="top">
+        <div style="display: flex;">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.yTCkbSdlE-47Xf5RzRHNQwHaF7?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" class="img"/>
+
+            <h1 class="head">
+                Optim Hospitals
+            </h1>
+            </div>
+            <div class="but">
+                <button onclick="location.href='Hospitals.html'">Hospitals</button>
+                <button  onclick="location.href='Doctor.html'">Doctor</button>
+                <button onclick="location.href='Patient.html'">Patient</button>
+                
+            </div>
+            </div>
+       
+     </div>
+ <div class="container">
+    <h1>Hospital Admin Panel</h1>
+
+    <!-- Register Hospital -->
+    <section class="form-section">
+      <h2>Register New Hospital</h2>
+      <form id="hospitalForm">
+        <input type="text" placeholder="Hospital Name" required />
+        <input type="text" placeholder="Location" required />
+        <button type="submit">Register Hospital</button>
+      </form>
+    </section>
+
+    <!-- Add Department -->
+    <section class="form-section">
+      <h2>Manage Departments</h2>
+      <form id="departmentForm">
+        <input type="text" placeholder="Department Name" required />
+        <select>
+          <option>Select Hospital</option>
+          <!-- Dynamically populate this -->
+        </select>
+        <button type="submit">Add Department</button>
+      </form>
+    </section>
+  </div>
+    </div>
+
+
+    </body>
+</html>

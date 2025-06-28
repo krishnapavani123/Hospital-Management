@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="hospital.css"/>
+</head>
+<body>
+<div id="hospital-section" class="tab-content">
+  <h2> Register New Hospital</h2>
+  <form id="registerHospitalForm">
+    <label for="hospitalName">Hospital Name:</label>
+    <input type="text" id="hospitalName" name="hospitalName" required />
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required />
+
+    <button type="submit">Register Hospital</button>
+  </form>
+
+  <hr />
+
+  <h3> Manage Departments</h3>
+  <form id="departmentForm">
+    <label for="departmentName">Department Name:</label>
+    <input type="text" id="departmentName" name="departmentName" required />
+
+    <label for="hospitalSelect">Select Hospital:</label>
+    <select id="hospitalSelect" name="hospitalSelect" required>
+      <option value="">-- Choose Hospital --</option>
+      <!-- Dynamically populate this with JS -->
+    </select>
+
+    <button type="submit">Add Department</button>
+  </form>
+  <button onclick="location.href='Home.html'">Back</button>
+</div>
+</body>
+</html>
